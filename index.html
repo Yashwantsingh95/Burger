@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Premium Burger</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Cinematic Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-text">PREPARING</div>
+            <div class="loader-percentage" id="loader-percentage">0%</div>
+            <div class="loader-bar-container">
+                <div class="loader-bar" id="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax Background Typography -->
+    <div class="parallax-bg-text" id="parallax-text">BURGER</div>
+
+    <!-- Canvas Containers -->
+    <div class="canvas-container">
+        <canvas id="burger-canvas"></canvas>
+        <canvas id="particles-canvas"></canvas>
+    </div>
+    
+    <!-- Hotspots Overlay (hidden until the end) -->
+    <div class="hotspots-container" id="hotspots-container">
+        <div class="hotspot" style="top: 30%; left: 40%;">
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip">Artisan Brioche Bun<br><span>Toasted to golden perfection.</span></div>
+        </div>
+        <div class="hotspot" style="top: 45%; left: 55%;">
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip">Truffle Cheddar<br><span>Aged for 24 months.</span></div>
+        </div>
+        <div class="hotspot" style="top: 60%; left: 45%;">
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip">100% Wagyu Beef<br><span>Juicy, tender, premium cut.</span></div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <section class="step" id="step-1">
+            <div class="glass-card interactive">
+                <h1>The Art of the Burger</h1>
+                <p>Experience perfection, layer by layer.</p>
+            </div>
+        </section>
+        
+        <section class="step right" id="step-2">
+            <div class="glass-card interactive">
+                <h2>Fresh Ingredients</h2>
+                <p>Sourced daily for the ultimate flavor profile.</p>
+            </div>
+        </section>
+
+        <section class="step left" id="step-3">
+            <div class="glass-card interactive">
+                <h2>Gourmet Cheese</h2>
+                <p>Melted to perfection over a premium wagyu patty.</p>
+            </div>
+        </section>
+
+        <section class="step center" id="step-4">
+            <div class="glass-card interactive">
+                <h2>A Masterpiece</h2>
+                <p>Ready to satisfy your cravings.</p>
+                <button class="cta-button interactive">Order Now</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
